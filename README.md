@@ -11,6 +11,7 @@ Just download the PDF. If you have any suggestions, add an issue (see the toolba
 For advanced users
 ------------------
 
-Make sure you have TikZ and amsmath installed before trying to compile. Will have to compile
+Make sure you have TikZ, polynom, and amsmath installed before trying to compile. 
+You will have to compile
 twice to get the graphs to look right because of how TikZ works. Other than that, have fun!
 
