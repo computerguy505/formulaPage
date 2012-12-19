@@ -6,7 +6,7 @@ Just a little thing I'm working on for Alg II H at WL.
 For standard users
 ------------------
 
-Just download the PDF.
+Just download the PDF. If you have any suggestions, add an issue (see the toolbar near top of page).
 
 For advanced users
 ------------------
