@@ -416,6 +416,14 @@ $\pm1, \pm\frac{1}{2}, \pm2, \pm3, \pm\frac{3}{2}, \pm6$
 \log_bb^x &= x =b^{\log_bx} 
 \end{align*}
 \end{minipage}}
+\fbox{\begin{minipage}{67pt}
+\centering Other trig stuff
+\begin{align*}
+\cot &= \frac1{\tan} \\
+\csc &= \frac1{\sin} \\
+\sec &= \frac1{\cos}
+\end{align*}
+\end{minipage}}
 
 \fbox{\begin{minipage}{216pt}
 \centering Horizontal Asymptotes
@@ -457,14 +465,14 @@ $n$ is odd
 \end{minipage}
 \begin{minipage}{30pt}
 \begin{tikzpicture}
-  \draw[<->] (-.5,0) to (.5,0);
-  \draw[<->] (0,-.5) to (0,.5);
+  \draw[<->] (-.5,0) -- (.5,0);
+  \draw[<->] (0,-.5) -- (0,.5);
   \draw[in=270,out=0] (.25,.25) to (.5,.5);
   \draw[in=270,out=180] (-.25,.25) to (-.5,.5);
 \end{tikzpicture}
 \begin{tikzpicture}
-  \draw[<->] (-.5,0) to (.5,0);
-  \draw[<->] (0,-.5) to (0,.5);
+  \draw[<->] (-.5,0) -- (.5,0);
+  \draw[<->] (0,-.5) -- (0,.5);
   \draw[in=270,out=0] (.25,.25) to (.5,.5);
   \draw[in=90,out=180] (-.25,-.25) to (-.5,-.5);
 \end{tikzpicture}
@@ -481,14 +489,14 @@ $n$ is odd
 \end{minipage}
 \begin{minipage}{30pt}
 \begin{tikzpicture}
-  \draw[<->] (-.5,0) to (.5,0);
-  \draw[<->] (0,-.5) to (0,.5);
+  \draw[<->] (-.5,0) -- (.5,0);
+  \draw[<->] (0,-.5) -- (0,.5);
   \draw[in=90,out=0] (.25,-.25) to (.5,-.5);
   \draw[in=90,out=180] (-.25,-.25) to (-.5,-.5);
 \end{tikzpicture}
 \begin{tikzpicture}
-  \draw[<->] (-.5,0) to (.5,0);
-  \draw[<->] (0,-.5) to (0,.5);
+  \draw[<->] (-.5,0) -- (.5,0);
+  \draw[<->] (0,-.5) -- (0,.5);
   \draw[in=90,out=0] (.25,-.25) to (.5,-.5);
   \draw[in=270,out=180] (-.25,.25) to (-.5,.5);
 \end{tikzpicture}
@@ -503,4 +511,18 @@ $n$ is odd
 \end{align*}
 \end{minipage}}
 
+\fbox{\begin{minipage}{207pt}
+\centering $y=\sin x$ in red; $y=\cos x$ in blue
+\begin{tikzpicture}[yscale=1.5]
+\draw [help lines, ->] (0,0) -- (6.4,0);
+\node [below] at (6.4,0) {$2\pi$};
+\node [below] at (pi,0) {$\pi$};
+\node [left] at (0,1) {1};
+\node [left] at (0,-1) {-1};
+\draw [help lines, <->] (0,-1.1) -- (0,1.1);
+\draw [red,domain=0:2*pi] plot (\x, {sin(\x r)});
+\draw [blue, domain=0:2*pi] plot (\x, {cos(\x r)});
+
+\end{tikzpicture}
+\end{minipage}}
 \end{document}
