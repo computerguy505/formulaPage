@@ -218,6 +218,185 @@ W = \vec F\cdot \vec D
 \fbox{\( \cos u\cos v=\frac12[\cos(u+v)+\cos(u-v)] \)}
 \fbox{\( \sin u\sin v=\frac12[\cos(u+v)-\cos(u-v)] \)}
 \end{minipage}}
+
+\fbox{\begin{minipage}{89pt}
+\centering Row-Echelon Form
+\[\left[
+  \begin{array}{rrrr}
+    1 & 2 &-1 & 1 \\
+    0 & 1 & 4 &-7 \\
+    0 & 0 & 1 &-2 \\
+  \end{array}
+\right]\]
+\end{minipage}}
+\fbox{\begin{minipage}{89pt}
+\centering Reduced Row-Echelon Form
+\[\left[
+  \begin{array}{rrrr}
+    1 & 0 & 0 &-3 \\
+    0 & 1 & 0 & 1 \\
+    0 & 0 & 1 &-2 \\
+  \end{array}
+\right]\]
+\end{minipage}}
+\fbox{\begin{minipage}{308pt}
+\centering Using matrix inverses ($AX = B \Rightarrow X = A^{-1}B$)
+\[
+\left[
+  \begin{array}{rr}
+    2 & -5 \\
+    3 & -6 \\
+  \end{array}
+  \right]
+\left[
+  \begin{array}{c}
+    x \\
+    y \\
+  \end{array}
+  \right]
+=
+\left[
+  \begin{array}{r}
+    15 \\
+    36 \\
+  \end{array}
+  \right]
+\Longrightarrow
+\left[
+  \begin{array}{c}
+    x \\
+    y \\
+  \end{array}
+  \right]
+=
+\left[
+  \begin{array}{rr}
+    -2 & \frac53 \\
+    -1 & \frac23 \\
+  \end{array}
+  \right]
+\left[
+  \begin{array}{r}
+    15 \\
+    36 \\
+  \end{array}
+  \right]
+=
+\left[
+  \begin{array}{r}
+    30 \\
+    9 \\
+  \end{array}
+  \right]
+\]
+\end{minipage}}
+
+\fbox{\begin{minipage}{462pt}
+\centering Matrix Multiplication!
+\[
+\left[\begin{array}{rr}
+    1 & 3 \\
+   -1 & 0 \\
+\end{array}\right]
+\left[\begin{array}{rrr}
+   -1 & 5 & 2 \\
+    0 & 4 & 7 \\
+\end{array}\right]
+=
+\left[\begin{array}{rrr}
+    1\cdot (-1) + 3\cdot 0 & 1\cdot 5 + 3\cdot 4 & 1 \cdot 2 + 3\cdot 7 \\
+    (-1)\cdot(-1) + 0\cdot 0 & (-1)\cdot5+0\cdot4 & (-1)\cdot2+0\cdot7 \\
+\end{array}\right]
+=
+\left[\begin{array}{rrr}
+    -1 & 17 & 23 \\
+     1 & -5 & -2 \\
+\end{array}\right]
+\]
+\end{minipage}}
+
+\fbox{\begin{minipage}{225pt}
+\centering $2\times2$ Matrix Inverse
+\[
+\textrm{If }A=
+\left[\begin{array}{rr}
+    a & b \\
+    c & d \\
+\end{array}\right]
+\textrm{ then }
+A^{-1}=\frac{1}{ad-bc}
+\left[\begin{array}{rr}
+    d & -b \\
+    -c & a \\
+\end{array}\right]
+\]
+\end{minipage}}
+\fbox{\begin{minipage}{276pt}
+\centering $n\times n$ Matrix Inverse
+\[
+\left[\begin{array}{rrr}
+    1 & -2 & -4 \\
+    2 & -3 & -6 \\
+    -3 & 6 & 15 \\
+  \end{array}
+  \middle|
+  \begin{array}{rrr}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1 \\
+  \end{array}
+  \right]
+\longrightarrow
+\left[\begin{array}{rrr}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1 \\
+  \end{array}
+  \middle|
+  \begin{array}{rrr}
+    -3 & 2 & 0 \\
+    -4 & 1 & -\frac23 \\
+    1 & 0 & \frac12
+  \end{array}
+  \right]
+\]
+\end{minipage}}
+
+\fbox{\begin{minipage}{147pt}
+\centering $2\times2$ Matrix Determinant
+\[
+\det(A) = |A| = 
+\left|\begin{array}{cc}
+a & b \\
+c & d \\
+\end{array}\right|
+= ad - bc
+\]
+\end{minipage}}
+\fbox{\begin{minipage}{145pt}
+    \centering Minor $M_{ij}$:
+    Take the matrix and delete the $i$th row and the $j$th column. Find the determinant
+\end{minipage}}
+\fbox{\begin{minipage}{58pt}
+\centering Cofactor $A_{ij}$
+\[
+(-1)^{i+j}M_{ij}
+\]
+\end{minipage}}
+
+\fbox{\begin{minipage}{320pt}
+\centering $n\times n$ Matrix Determinant (can move along any row/column)
+\[
+\det(A) = |A| =
+\left|\begin{array}{cccc}
+    a_{11} & a_{12} & \cdots & a_{1n} \\
+    a_{21} & a_{22} & \cdots & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m2} & \cdots & a_{mn} \\ % worked out beautifully, huh? Completely unintentional.
+\end{array}\right|
+= a_{11}A_{11} + a_{12}A_{12} + \cdots + a_{1n}A_{1n}
+\]
+\end{minipage}}
 \newpage
 \fbox{\begin{minipage}{266pt}
 \centering Algebra of Functions
@@ -418,146 +597,4 @@ amplitude  $|a|$, period  $2\pi/k$, phase shift $b$
     \end{enumerate}
 \end{minipage}}
 
-\fbox{\begin{minipage}{89pt}
-\centering Row-Echelon Form
-\[\left[
-  \begin{array}{rrrr}
-    1 & 2 &-1 & 1 \\
-    0 & 1 & 4 &-7 \\
-    0 & 0 & 1 &-2 \\
-  \end{array}
-\right]\]
-\end{minipage}}
-\fbox{\begin{minipage}{89pt}
-\centering Reduced Row-Echelon Form
-\[\left[
-  \begin{array}{rrrr}
-    1 & 0 & 0 &-3 \\
-    0 & 1 & 0 & 1 \\
-    0 & 0 & 1 &-2 \\
-  \end{array}
-\right]\]
-\end{minipage}}
-\fbox{\begin{minipage}{308pt}
-\centering Using matrix inverses ($AX = B \Rightarrow X = A^{-1}B$)
-\[
-\left[
-  \begin{array}{rr}
-    2 & -5 \\
-    3 & -6 \\
-  \end{array}
-  \right]
-\left[
-  \begin{array}{c}
-    x \\
-    y \\
-  \end{array}
-  \right]
-=
-\left[
-  \begin{array}{r}
-    15 \\
-    36 \\
-  \end{array}
-  \right]
-\Longrightarrow
-\left[
-  \begin{array}{c}
-    x \\
-    y \\
-  \end{array}
-  \right]
-=
-\left[
-  \begin{array}{rr}
-    -2 & \frac53 \\
-    -1 & \frac23 \\
-  \end{array}
-  \right]
-\left[
-  \begin{array}{r}
-    15 \\
-    36 \\
-  \end{array}
-  \right]
-=
-\left[
-  \begin{array}{r}
-    30 \\
-    9 \\
-  \end{array}
-  \right]
-\]
-\end{minipage}}
-
-\fbox{\begin{minipage}{462pt}
-\centering Matrix Multiplication!
-\[
-\left[\begin{array}{rr}
-    1 & 3 \\
-   -1 & 0 \\
-\end{array}\right]
-\left[\begin{array}{rrr}
-   -1 & 5 & 2 \\
-    0 & 4 & 7 \\
-\end{array}\right]
-=
-\left[\begin{array}{rrr}
-    1\cdot (-1) + 3\cdot 0 & 1\cdot 5 + 3\cdot 4 & 1 \cdot 2 + 3\cdot 7 \\
-    (-1)\cdot(-1) + 0\cdot 0 & (-1)\cdot5+0\cdot4 & (-1)\cdot2+0\cdot7 \\
-\end{array}\right]
-=
-\left[\begin{array}{rrr}
-    -1 & 17 & 23 \\
-     1 & -5 & -2 \\
-\end{array}\right]
-\]
-\end{minipage}}
-
-\fbox{\begin{minipage}{225pt}
-\centering $2\times2$ Matrix Inverse
-\[
-\textrm{If }A=
-\left[\begin{array}{rr}
-    a & b \\
-    c & d \\
-\end{array}\right]
-\textrm{ then }
-A^{-1}=\frac{1}{ad-bc}
-\left[\begin{array}{rr}
-    d & -b \\
-    -c & a \\
-\end{array}\right]
-\]
-\end{minipage}}
-\fbox{\begin{minipage}{276pt}
-\centering $n\times n$ Matrix Inverse
-\[
-\left[\begin{array}{rrr}
-    1 & -2 & -4 \\
-    2 & -3 & -6 \\
-    -3 & 6 & 15 \\
-  \end{array}
-  \middle|
-  \begin{array}{rrr}
-    1 & 0 & 0 \\
-    0 & 1 & 0 \\
-    0 & 0 & 1 \\
-  \end{array}
-  \right]
-\longrightarrow
-\left[\begin{array}{rrr}
-    1 & 0 & 0 \\
-    0 & 1 & 0 \\
-    0 & 0 & 1 \\
-  \end{array}
-  \middle|
-  \begin{array}{rrr}
-    -3 & 2 & 0 \\
-    -4 & 1 & -\frac23 \\
-    1 & 0 & \frac12
-  \end{array}
-  \right]
-\]
-\end{minipage}}
 \end{document}
