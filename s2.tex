@@ -1,13 +1,13 @@
 \documentclass[10pt,letterpaper]{article}
 
+\usepackage[usenames]{xcolor}
 \usepackage[margin=.5in]{geometry}
 %\usepackage{xfrac}
 \usepackage{polynom}
 \usepackage{tikz}
 \usepackage{amsmath}
 \usepackage{fancyhdr}
-\usepackage{datetime} % `us' makes \today behave as usual in TeX/LaTeX
-
+\usepackage{datetime}
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -402,15 +402,15 @@ c & d \\
 \[
 \det(A) = |A| =
 \left|\begin{array}{cccc}
-    a_{11} & a_{12} & \cdots & a_{1n} \\
+    \color{red}a_{11} & \color{red}a_{12} & \color{red}\cdots & \color{red}a_{1n} \\
     a_{21} & a_{22} & \cdots & a_{2n} \\
     \vdots & \vdots & \ddots & \vdots \\
-    a_{m1} & a_{m2} & \cdots & a_{mn} \\ % worked out beautifully, huh? Completely unintentional.
+    a_{m1} & a_{m2} & \cdots & a_{mn} \\ 
 \end{array}\right|
-= a_{11}A_{11} + a_{12}A_{12} + \cdots + a_{1n}A_{1n}
+= {\color{red}a_{11}}A_{11} + {\color{red}a_{12}}A_{12} + \cdots + {\color{red}a_{1n}}A_{1n}
 \]
 \end{minipage}}
-\fbox{ \begin{minipage}{133pt}
+\fbox{ \begin{minipage}{115pt}
 \centering Common Sums
 \[
 \sum_{k=1}^n c = nc
@@ -696,7 +696,7 @@ r = \frac{ed}{1\pm e(\cos\textrm{ or }\sin)\theta}
 f^{-1} (a) = \lim_{h \to 0} \frac{ f(a+h)-f(a) }{h} 
 \]
 \end{minipage}}
-\fbox{ \begin{minipage}{133pt}
+\fbox{ \begin{minipage}{99pt}
 \centering Area
 \[
 A = \lim_{n \to \infty} \sum_{k=1}^n f(x_k) \Delta x
