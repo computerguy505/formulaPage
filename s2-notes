@@ -18,26 +18,26 @@ x 598 polar form of complex #s (cis)
 x 599 mult and div of complex #s
 x 600 DeMoivre's Theorem (powers of complex #s)
 x 601 roots of complex #s
-  610 magnitude of vectors
-  610-612 various other vector definitions
-  618 dot product stuffs
-  619 angle between 2 vectors
-      orthogonal (perpendicular) vectors
-  621 components
-  622 projections
-  623 work as a dot product
-  637 substitution for systems of linear equations
-  639 elimination for systems "
-  640 graphing (ha, ha) for systems "
-  644 # of solutions for systems "
-  652 triangular back-substitution
-  662 matrix notation
-  663 matrix row operation
-  665 ref and rref
-  666 gaussian elimination
-  676 summing + scaling matrices
-  679 matrix multiplication
-  680 matrix mult properties
+x 610 magnitude of vectors
+x 610-612 various other vector definitions
+x 618 dot product stuffs
+x 619 angle between 2 vectors
+x     orthogonal (perpendicular) vectors
+x 621 components
+x 622 projections
+x 623 work as a dot product
+o 637 substitution for systems of linear equations
+o 639 elimination for systems "
+o 640 graphing (ha, ha) for systems "
+o 644 # of solutions for systems "
+o 652 triangular back-substitution
+x 662 matrix notation
+x 663 matrix row operation
+x 665 ref and rref
+o 666 gaussian elimination
+o 676 summing + scaling matrices
+x 679 matrix multiplication
+o 680 matrix mult properties
   690 2x2 matrix inverse
   691 nxn matrix inverse
   704 2x2 matrix determinant
