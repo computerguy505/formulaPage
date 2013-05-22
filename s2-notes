@@ -38,29 +38,29 @@ o 666 gaussian elimination
 o 676 summing + scaling matrices
 x 679 matrix multiplication
 o 680 matrix mult properties
-  690 2x2 matrix inverse
-  691 nxn matrix inverse
-  704 2x2 matrix determinant
-      minor + cofactor
-  705 nxn matrix determinant
-  707 if det(A)=0 A^-1 dne
-  709 Cramer's rule for 2 vars
-  710 Cramer's rule
-  712 area of a triangle as a matrix
-  716-719 reducing partial fractions
-  737 linear programming
-  745 parabola
-  755 ellipse
-  757 eccentricity
-  763 hyperbola
-  776 shifting eqns
-  780 general eqn for a shifted conic
-  784 rotation of axes
-  786 fml
-  789 conics by discriminant
-  795 general definition of conics by eccentricity
-  796 polar conics
-  806 polar to parametric
+x 690 2x2 matrix inverse
+x 691 nxn matrix inverse
+x 704 2x2 matrix determinant
+x     minor + cofactor
+x 705 nxn matrix determinant
+o 707 if det(A)=0 A^-1 dne
+x 709 Cramer's rule for 2 vars
+o 710 Cramer's rule for n vars
+o 712 area of a triangle as a matrix
+o 716-719 reducing partial fractions
+o 737 linear programming
+x 745 parabola
+x 755 ellipse
+x 757 eccentricity
+x 763 hyperbola
+o 776 shifting eqns
+o 780 general eqn for a shifted conic
+o 784 rotation of axes
+o 786 fml
+o 789 conics by discriminant
+x 795 general definition of conics by eccentricity
+x 796 polar conics
+o 806 polar to parametric
   830 properties of sums (with sigma notation)
   833 arithmetic seq
   835 arithmetic partial sum
