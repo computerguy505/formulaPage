@@ -2,22 +2,22 @@ x 495 area of a triangle by included angle
 x 502 law of sines
 x 509 law of cosines
 x 512 heron's formula (area of a triangle based on 3 sides)
-  528 fundamental trig identities
-  535 trig addition and subtraction formulae
-  538 sums of sines and consines
-  542 double-angle formulae
-  544 power formlae
-      half-angle formulae
-  546 product-to-sum formulae
-  547 sum-to-product formulae
-  584 conversion polar to/from rectangular
-  591 polar symmetry tests
-  594 common polar curves
-  597 modulus of a complex #
-  598 polar form of complex #s (cis)
-  599 mult and div of complex #s
-  600 DeMoivre's Theorem (powers of complex #s)
-  601 roots of complex #s
+x 528 fundamental trig identities
+x 535 trig addition and subtraction formulae
+o 538 sums of sines and consines
+x 542 double-angle formulae
+x 544 power formlae
+x     half-angle formulae
+x 546 product-to-sum formulae
+x 547 sum-to-product formulae
+x 584 conversion polar to rectangular
+o 591 polar symmetry tests
+  594 common polar curves (draw by hand?)
+x 597 modulus of a complex #
+x 598 polar form of complex #s (cis)
+x 599 mult and div of complex #s
+x 600 DeMoivre's Theorem (powers of complex #s)
+x 601 roots of complex #s
   610 magnitude of vectors
   610-612 various other vector definitions
   618 dot product stuffs

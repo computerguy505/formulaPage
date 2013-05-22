@@ -8,6 +8,7 @@
 
 \usetikzlibrary{calc}
 \newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\DeclareMathOperator{\cis}{cis}
 
 \begin{document}
 %\everymath{\scriptscriptstyle}
@@ -83,11 +84,48 @@ A=\frac12r^2\theta
 Area = ab\cdot \frac12 \sin C
 \]
 \end{minipage}}
+\fbox{\begin{minipage}{63pt}
+\centering Polar to $(x,y)$
+\[
+r^2=x^2+y^2
+\] \[
+\tan\theta=\frac yx
+\]
+\end{minipage}}
 \fbox{ \begin{minipage}{140pt}
 \[
 (\log_ab)(\log_cd)=(\log_ad)(\log_cb)
 \]
 \end{minipage}}
+
+\fbox{ \begin{minipage}{65pt}
+\[
+z=a+bi
+\] \[
+|z|=\sqrt{a^2+b^2}
+\]
+\end{minipage}}
+\fbox{ \begin{minipage}{66pt}
+\[
+z=r\cis\theta
+\] \[
+z^n=r^n\cis(n\theta)
+\]
+\end{minipage}}
+\fbox{ \begin{minipage}{110pt}
+\centering $n$th roots of $z=r\cis\theta$
+\[
+w_k=r^{1/n}\cis\left(\frac{\theta+2k\pi}{n}\right)
+\]
+\end{minipage}}
+\fbox{ \begin{minipage}{97pt}
+\[
+z_1z_2=r_1r_2\cis(\theta_1+\theta_2)
+\] \[
+\frac{z_1}{z_2}=\frac{r_1}{r_1}\cis(\theta_1-\theta_2)
+\]
+\end{minipage}}
+
 
 \fbox{ \begin{minipage}{7.36in}
 \centering Trig Identities
