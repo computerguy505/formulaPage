@@ -1,0 +1,534 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[usenames]{xcolor}
+\usepackage[margin=.5in]{geometry}
+%\usepackage{xfrac}
+\usepackage{polynom}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage{siunitx}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{5pt}
+\setlength{\voffset}{-.6in}
+\setlength{\topmargin}{0pt}
+\renewcommand{\timeseparator}{}
+\newdateformat{timestamp}{\THEYEAR\twodigit{\THEMONTH}\twodigit{\THEDAY}}
+\fancyhead[C]{Physics I H Semester 1 rev {\timestamp\today}\currenttime ~\texttt{github.com/cg505/formulaPage}}
+
+\usetikzlibrary{scopes}
+
+%% \usetikzlibrary{calc}
+%% \newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+%% \DeclareMathOperator{\cis}{cis}
+%% \newcommand{\jhat}{\hat{\jmath}}
+%% \newcommand{\ihat}{\hat{\imath}}
+%% \newcommand{\proj}[2]{\textrm{proj}_{#1}{#2}}
+
+\begin{document}
+%\everymath{\scriptscriptstyle}
+\parindent=0pt
+\abovedisplayshortskip=0pt
+\belowdisplayshortskip=0pt
+\abovedisplayskip=0pt
+\belowdisplayskip=0pt
+
+\fbox{ \begin{minipage}{315pt}
+\centering \(\Delta x \to \Delta\theta\) displacement, \(v \to \omega\) vel., \(a = \bar{a} \to \alpha\) constant accel., \(\bar{x}\) avg. \(x\)
+
+\fbox{\( v = v_o + at \)}
+\fbox{\( \bar{v} = \frac{v_0 + v}{2} \)}
+\fbox{\( \Delta x = \bar{v} t \)}
+\fbox{\( \Delta x = v_0 t + \frac12 a t^2 \)}
+\fbox{\( v^2 = v_0^2 + 2 a \Delta x \)}
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{60pt}
+\centering Earth gravity
+\[
+g = \SI{9.80}{m/s^2}
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{36pt}
+\centering Newton
+\[
+F = m a
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{35pt}
+\centering Friction
+\[
+f = \mu N
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{42pt}
+\centering Static
+\[
+f_s \leq \mu_s N
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{38pt}
+\centering Weight
+\[
+W = m g
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{35pt}
+\centering
+\[
+a_c = \frac{v^2}{r}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{50pt}
+\centering Momentum
+\[
+\vec p = m \vec v
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{103pt}
+\centering Impulse
+\[
+\vec F \Delta t = \Delta \vec p = m \vec v_f - m \vec v_i
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{121pt}
+\centering Universal gravitational constant
+\[
+G = \SI{6.67e-11}{N.m^2/k.g^2}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{50pt}
+\centering
+\[
+v = \sqrt{\frac{G M}{r}}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{39pt}
+\centering Period
+\[
+T = \frac{2 \pi r}{v}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{53pt}
+\centering
+\[
+T^2 = \frac{4 \pi^2 r^3}{G M}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{34pt}
+\centering \(T\) in yr, \(r\) in AU
+\[
+T^2 = r^3
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{58pt}
+\centering
+\[
+F = \frac{G m_1 m_2}{r^2}
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{100pt}
+\centering Work
+\[
+W = \vec F \cdot \vec x = \lvert F \rvert \lvert x \rvert \cos \theta
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{40pt}
+\centering Springs
+\[
+F = -k x
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{62pt}
+\centering Potential
+\[
+\textsc{pe}_{grav} = m g y
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{73pt}
+\centering Energy
+\[
+\textsc{pe}_{elastic} = \tfrac12 k x^2
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{50pt}
+\centering Kinetic E.
+\[
+\textsc{ke} = \tfrac12 m v^2
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{98pt}
+\centering Work and KE
+\[
+W = \Delta\textsc{ke} = \textsc{ke}_f - \textsc{ke}_i
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{92pt}
+\centering Conservation of E.
+\[
+\textsc{ke}_i + \textsc{pe}_i = \textsc{ke}_f + \textsc{pe}_f
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{125pt}
+\centering Perfectly inelastic collision
+\[
+m_1 \vec v_{1_i} + m_2 \vec v_{2_i} = (m_1 + m_2) \vec v_f
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{135pt}
+\centering Inelastic collision (not perf.)
+\[
+m_1 \vec v_{1_i} + m_2 \vec v_{2_i} = m_1 \vec v_{1_f} + m_2 \vec v_{2_f}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{97pt}
+\centering Elastic collision
+\[
+\vec v_{1_i} - \vec v_{2_i} = -(\vec v_{1_f} - \vec v_{2_f})
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{28pt}
+\centering Arc length
+\[
+s = r \theta
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{46pt}
+\centering Tangential Velocity
+\[
+v = r \omega
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{43pt}
+\centering Changes speed
+\[
+a_{tan} = r \alpha
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{43pt}
+\centering \vspace{-6pt}
+\[
+a_c = a_r =
+\]\[
+\frac{v^2}{r}= r \omega^2
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{43pt}
+\centering \vspace{-6pt}
+\[
+a_c = a_r =
+\]\[
+\frac{v^2}{r}= r \omega^2
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{102pt}
+\centering Torque (in \si{m.N} not \si{J})
+\[
+\tau = \lvert \vec r \times \vec F \rvert = \lvert \vec r \rvert \lvert \vec F \rvert \sin \theta
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{52pt}
+\centering Rot. inertia
+\[
+I = \Sigma m r^2
+\]
+See back
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{35pt}
+\centering \vspace{-6pt}
+\[
+F = m a
+\]\[
+\tau = I \alpha
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{50pt}
+\centering Angular momentum
+\[
+L = I \omega
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{98pt}
+\centering Angular impulse
+\[
+\tau \Delta t = \Delta L = I \omega_f - I \omega_i
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{120pt}
+\centering Linear kinetic energy
+\[
+\textsc{ke}_{linear} = \textsc{ke}_{trans} = \frac12 m v^2
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{60pt}
+\centering Rotational
+\[
+\textsc{ke}_{rot} = \frac12 I \omega^2
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{50pt}
+\centering Used below
+\[
+\mu = \frac{m}{L}
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{41pt}
+\centering Springs
+\[
+\omega = \sqrt{\frac{k}{m}}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{60pt}
+\centering SHM (smh)
+\[
+x = A \cos(\omega t)
+\]\[
+\textrm{or~} A \sin(\omega t)
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{56pt}
+\centering Period/freq
+\[
+f = \frac{1}{T} = \frac{\omega}{2\pi}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{51pt}
+\centering Pendulum
+\[
+T = 2 \pi \sqrt{\frac{L}{g}}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{62pt}
+\centering Sound in air \\
+\scriptsize v in \si{m/s},\\
+temp T in \si{\celsius} \\
+\normalsize
+\(
+v = 331 + 0.6 T
+\)
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{51pt}
+\centering Wavelength
+\[
+\lambda = \frac{v}{f}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{53pt}
+\centering String
+\[
+v = \sqrt{\frac{F_{tens}}{\mu}}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{50pt}
+\centering Harmonics \vspace{2pt}
+\[
+f_n = \frac{n v}{2 L}
+\]
+\end{minipage}}
+%%
+
+\fbox{ \begin{minipage}{47pt}
+\centering Open tube
+\[
+f_n = \frac{n v}{2 L}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{52pt}
+\centering Closed tube
+\[
+f_n = \frac{n v}{4 L}
+\]
+\scriptsize n is odd
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{41pt}
+\centering Intensity
+\[
+I = \frac{P}{4 \pi r^2}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{72pt}
+\centering Loudness, dB
+\[
+\beta = 10 \log \left( \frac{I}{I_0} \right)
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{77pt}
+\centering Standard Intensity
+\[
+I_0 = \SI{e-12}{W/m^2}
+\]
+\end{minipage}}
+%%
+\fbox{ \begin{minipage}{81pt}
+\centering Doppler Effect
+\[
+f' = f \left( \frac{v \pm v_{obs}}{v \mp v_{src}} \right)
+\]
+\end{minipage}}
+%%
+
+\newpage
+\fbox{\begin{minipage}{142pt}
+\centering Values of Rotational Inertia I
+\raggedright
+\[
+\begin{array}{l l}
+\textrm{Thin hoop} & m r^2\\
+\textrm{Solid cylinder} & \frac12 m r^2\\
+\textrm{Hollow cylinder} & \frac12 m(r_1^2 + r_2^2)\\
+\textrm{Sphere} & \frac25 m r^2\\
+\end{array}
+\]
+A sphere is the fastest object
+\end{minipage}}
+%%
+\fbox{\begin{minipage}{90pt}
+\centering Equilibrium Probz
+\begin{align*}
+F_{up} &= F_{down} \\
+F_{left} &= F_{right} \\
+\tau_{CW} &= \tau_{CCW}
+\end{align*}
+\raggedright Choose pivot point at unknown force
+\end{minipage}}
+%%
+
+\fbox{\begin{minipage}{143pt}
+\centering Free body diagrams!
+%% \begin{table}{pp}
+
+\def\iangle{35} % Angle of the inclined plane
+
+\def\down{-90}
+\def\arcr{0.5cm} % Radius of the arc used to indicate angles
+
+\begin{tikzpicture}[
+    force/.style={>=latex,draw=blue,fill=blue},
+    fakeforce/.style={densely dashed,>=latex,draw=blue,fill=blue},
+    axis/.style={densely dashed,gray,font=\small},
+    M/.style={rectangle,draw,fill=lightgray,minimum size=0.5cm,thin},
+    m/.style={rectangle,draw=black,fill=lightgray,minimum size=0.3cm,thin},
+    plane/.style={draw=black,fill=blue!10},
+    string/.style={draw=red, thick},
+    pulley/.style={thick},
+]
+
+\matrix[column sep=1cm] {
+    %% Sketch
+    \draw[plane] (0,-1) coordinate (base)
+                     -- coordinate[pos=0.5] (mid) ++(\iangle:3) coordinate (top)
+                     |- (base) -- cycle;
+    \path (mid) node[M,rotate=\iangle,yshift=0.25cm] (M) {};
+    %% \draw[pulley] (top) -- ++(\iangle:0.25) circle (0.25cm)
+    %%                ++ (90-\iangle:0.5) coordinate (pulley);
+    %% \draw[string,->] (M.east) -- ++(\iangle:1.5cm) {};
+
+    \draw[->] (base)++(\arcr,0) arc (0:\iangle:\arcr);
+    \path (base)++(\iangle*0.5:\arcr+5pt) node {$\theta$};
+    %%
+
+%% &
+    %% Free body diagram of M
+    \begin{scope}[rotate=\iangle, shift=(M)]
+        %% \node[M,transform shape] (M) {};
+        % Draw axes and help lines
+
+        {[axis,->]
+            \draw (0,-1) -- (0,2) node[right] {$+y$};
+            \draw (M) -- ++(2,0) node[right] {$+x$};
+            % Indicate angle. The code is a bit awkward.
+
+            \draw[solid,shorten >=0.5pt] (\down-\iangle:\arcr)
+                arc(\down-\iangle:\down:\arcr);
+            \node at (\down-0.5*\iangle:1.3*\arcr) {$\theta$};
+        }
+
+        % Forces
+        {[force,->]
+            % Assuming that Mg = 1. The normal force will therefore be cos(alpha)
+            \draw (M.north) -- ++(0,{cos(\iangle)}) node[above right] {$N$};
+            \draw (M.west) -- ++(-1,0) node[above left] {$f=\mu N$};
+            \draw (M.east) -- ++(1,0) node[above] {$T$};
+        }
+
+    \end{scope}
+    % Draw gravity force. The code is put outside the rotated
+    % scope for simplicity. No need to do any angle calculations.
+    \draw[force,->] (M.center) -- ++(0,-1) node[below] {$mg$};
+    %% \draw[fakeforce,->] (M.center) -- ++(\iangle-90:1) node[above right] {$Mg$};
+    %% \draw[fakeforce,->] (M.center)++(\iangle-90:1) -- ++(0,-1) node[below] {$Mg$};
+    %%
+
+\\
+};
+\end{tikzpicture}
+%% &
+\[
+N = m g \cos \theta
+\]\[
+T - m g \sin \theta - f = ma
+\]\[
+T - m g \sin \theta - \mu m g \cos \theta = m a
+\]
+%% \end{table}
+\end{minipage}}
+\end{document}
